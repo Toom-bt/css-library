@@ -1,0 +1,34 @@
+@import 'base/reset.scss';
+
+@import 'utils/functions.scss';
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+@import 'utils/vendors.scss';
+
+@import 'template/space.scss';
+@import 'template/position.scss';
+@import 'template/display.scss';
+@import 'template/links.scss';
+@import 'template/text.scss';
+@import 'template/size.scss';
+@import 'template/boxes.scss';
+@import 'template/titles.scss';
+@import 'template/noise.scss';
+@import 'template/button.scss';
+@import 'template/dispo.scss';
+@import 'template/img.scss';
+@import 'template/color.scss';
+@import 'template/opacity.scss';
+
+@import 'base/typo.scss';
+@import 'base/base.scss';
+
+@import 'navigation/navigation.scss';
+@import 'navigation/footer.scss';
+
+@import 'pages/home.scss';
+
+
+@import 'transition/transition.scss';
+
+

@@ -1,0 +1,65 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--color-light);
+  background: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-light);
+  background: var(--color-primary);
+}
+
+html {
+  font-size: calc((100vw / 1920) * 10);
+  line-height: 1;
+
+  background: var(--color-light);
+  color: var(--color-dark);
+
+  @media (max-width: 768px) {
+    font-size: calc((100vw / 750) * 10);
+  }
+}
+
+body{
+  font-size: 16px;
+
+  font-family: var(--font-montserrat);
+  background: var(--color-light);
+  color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  
+}
+
+img {
+  opacity: 1;
+  vertical-align: middle;
+}
+
+.content {
+  @extend %cover;
+}
+
+svg {
+  color: var(--color-dark);
+  fill: var(--color-dark);
+}

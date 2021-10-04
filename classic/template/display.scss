@@ -1,0 +1,29 @@
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.around {
+    @extend .flex;
+
+    justify-content: space-around;
+}
+
+.between {
+    @extend .flex;
+
+    justify-content: space-between;
+}
+
+.h__center {
+    @extend .flex;
+    justify-content: center;
+}
+
+.v__center {
+    align-items: center;
+}

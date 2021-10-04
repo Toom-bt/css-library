@@ -1,0 +1,21 @@
+:root {
+  --color-light: #FFF7EC;
+  --color-primary: #FC8F00;
+  --color-dark: #1A1918;
+}
+
+.dark-mode {
+  --color-dark: #FFF7EC;
+  --color-primary: #FC8F00;
+  --color-light: #1A1918;
+}
+
+$font-americana: 'Montserrat';
+$font-montserrat: 'Montserrat';
+
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+$z-indexes: (
+  'navigation',
+  'content'
+);

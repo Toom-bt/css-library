@@ -1,0 +1,402 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.content {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+:root {
+  --color-light: #FFF7EC;
+  --color-primary: #FC8F00;
+  --color-dark: #1A1918;
+}
+
+.dark-mode {
+  --color-dark: #FFF7EC;
+  --color-primary: #FC8F00;
+  --color-light: #1A1918;
+}
+
+.dg.ac {
+  z-index: 99999 !important;
+}
+
+.section__space {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.s__margin {
+  margin-bottom: 30px;
+}
+
+.m__margin {
+  margin-bottom: 60px;
+}
+
+.l__margin {
+  margin-bottom: 90px;
+}
+
+.s__margin__top {
+  margin-top: 30px;
+}
+
+.m__margin__top {
+  margin-top: 60px;
+}
+
+.l__margin__top {
+  margin-top: 90px;
+}
+
+.auto__margin {
+  margin: auto 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.block {
+  display: block;
+}
+
+.flex, .h__center, .between, .around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.h__center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.max__desktop {
+  max-width: 1140px;
+  width: 1140px;
+  position: relative;
+}
+
+.full__section {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.full__width {
+  width: 100vw;
+  display: block;
+  position: relative;
+}
+
+.w__100 {
+  width: 100%;
+}
+
+.w__75 {
+  width: 75%;
+}
+
+.s__boxe {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.m__boxe {
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+.l__boxe {
+  width: 700px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.shadow {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.shadow {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main__title {
+  font-size: 80px;
+  color: var(--color-dark);
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.secondary__title {
+  font-size: 50px;
+  color: var(--color-dark);
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.third__title {
+  font-size: 30px;
+  color: var(--color-dark);
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.05;
+}
+
+.noise.dark-noise {
+  opacity: 0.1;
+}
+
+.main__button {
+  background: var(--color-primary);
+  padding: 20px 50px;
+  border-radius: 30px;
+  color: var(--color-light);
+  font-family: "Montserrat";
+  font-weight: 600;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+.main__button:hover {
+  opacity: 0.8;
+}
+
+.full {
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33%;
+}
+
+.fourth {
+  width: 25%;
+}
+
+.fith {
+  width: 20%;
+}
+
+.auto__height {
+  height: auto;
+}
+
+.contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.light {
+  color: var(--color-light);
+}
+
+.dark {
+  color: var(--color-dark);
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.primary__back {
+  background: var(--color-primary);
+}
+
+.light__back {
+  background: var(--color-light);
+}
+
+.dark__back {
+  background: var(--color-dark);
+}
+
+.white__back {
+  background: white;
+}
+
+.black__back {
+  background: black;
+}
+
+/* @font-face {
+  font-family: 'Americana LT';
+  src: url('../font/AmericanaLT-ExtraBold.woff2') format('woff2'),
+      url('../font/AmericanaLT-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+} */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--color-light);
+  background: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-light);
+  background: var(--color-primary);
+}
+
+html {
+  font-size: calc((100vw / 1920) * 10);
+  line-height: 1;
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+@media (max-width: 768px) {
+  html {
+    font-size: calc((100vw / 750) * 10);
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font-montserrat);
+  background: var(--color-light);
+  color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+img {
+  opacity: 1;
+  vertical-align: middle;
+}
+
+svg {
+  color: var(--color-dark);
+  fill: var(--color-dark);
+}
